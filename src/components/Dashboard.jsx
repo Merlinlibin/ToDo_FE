@@ -55,11 +55,9 @@ function App() {
 
         let postedObject = await postedJSON.json();
 
-        
-
         settodoName("");
         settodoDescription("");
-       
+
         callGetApi();
       } catch (error) {
         console.log(error);
@@ -143,9 +141,9 @@ function App() {
         <div>
           <hr />
           <div className=" d-flex justify-content-between py-1 mainsec">
-            <h3 className="text-sm">My Todos</h3>
+            <h2 className="text-sm">My Todos</h2>
             <div className="d-flex d-flex justify-content-end w-auto align-items-center">
-              <h3 className="d-inline w-auto px-2">Status Filter :</h3>
+              <h2 className="d-inline w-auto px-2">Status Filter:</h2>
               <select
                 className=" select form-select d-inline w-auto "
                 id="dataView"
