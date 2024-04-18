@@ -1,0 +1,60 @@
+.ip {
+  border: 1px solid #1edeb1;
+}
+.buttonAdd {
+  color: white;
+  border: none;
+}
+.heading, .mainsec{
+  -webkit-box-shadow: 20px 30px 85px 30px rgba(255,255,255,1);
+-moz-box-shadow: 20px 30px 85px 30px rgba(255,255,255,1);
+box-shadow: 20px 30px 85px 30px rgba(255,255,255,1);
+}
+.select {
+  background-image: url("./assets/icons8-sort-down-50.png");
+  color: white;
+  background-color: #ff8080;
+}
+.cartdselect {
+  background-image: url("./assets/icons8-sort-down-50.png");
+  color: white;
+  background-color: #ff8080;
+}
+.cards {
+  background: #dadada;
+}
+.edit {
+  color: white;
+  background:#6B6B6B;
+  border: none;
+  width: 35%;
+  height: 40px;
+}
+.delete {
+  color: white;
+  background: #d05e1f;
+  border: none;
+  width: 35%;
+  height: 40px;
+}
+.heightDiv {
+  height: 10vh;
+}
+@media screen and (max-width: 768px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+  }
+}
+.dashboard {
+  min-height: 100vh;
+  background-image: url("https://res.cloudinary.com/dewfjhlh5/image/upload/v1713436592/kqaj3xngmguldjvg6xg9.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  
+
+ 
+}

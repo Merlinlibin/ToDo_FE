@@ -1,0 +1,148 @@
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background:
+      radial-gradient(50% 50% at 100% 0,#47d3ff 0%  5% ,#474bff 6%  15%,#47d3ff 16% 25%,#474bff 26% 35%,#47d3ff 36% 45%,
+       #474bff 46% 55%,#47d3ff 56% 65%,#474bff 66% 75%,#47d3ff 76% 85%,#474bff 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50% at 0 100%,#47d3ff 0%  5% ,#474bff 6%  15%,#47d3ff 16% 25%,#474bff 26% 35%,#47d3ff 36% 45%,
+       #474bff 46% 55%,#47d3ff 56% 65%,#474bff 66% 75%,#47d3ff 76% 85%,#474bff 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50%,#47d3ff 0%  5% ,#474bff 6%  15%,#47d3ff 16% 25%,#474bff 26% 35%,#47d3ff 36% 45%,
+       #474bff 46% 55%,#47d3ff 56% 65%,#474bff 66% 75%,#47d3ff 76% 85%,#474bff 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50%,#47d3ff 0%  5% ,#474bff 6%  15%,#47d3ff 16% 25%,#474bff 26% 35%,#47d3ff 36% 45%,
+       #474bff 46% 55%,#47d3ff 56% 65%,#474bff 66% 75%,#47d3ff 76% 85%,#474bff 86% 95%,
+       #0000 96%) 39px 39px;
+background-size: 78px 78px;
+background-color: #47d3ff;
+}
+.sub {
+  background-color: rgb(116, 207, 232);
+  border-radius: 15px;
+}
+
+.my-shake {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-timing-function: easy-in;
+  animation-iteration-count: infinite;
+  border: 1px solid red;
+}
+.pass {
+  position: relative;
+}
+.errMail,
+.errpass {
+  color: red;
+}
+.eye {
+  position: absolute;
+  top: 6px;
+  right: 9px;
+  cursor: pointer;
+}
+.registerbtn,
+.forgetpassbtn {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: blue;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(-2deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  37% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  62% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  87% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .sub {
+    width: 65%;
+  }
+  .reset-popup {
+    width: 80%;
+  }
+}
+@media (min-width: 576px) {
+  .sub {
+    width: 65%;
+  }
+  .reset-popup {
+    width: 60%;
+  }
+}
+@media (min-width: 865px) {
+  .sub {
+    width: 35%;
+  }
+  .reset-popup {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .sub {
+    width: 27%;
+  }
+  .reset-popup {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .sub {
+    width: 27%;
+  }
+  .reset-popup {
+    width: 50%;
+  }
+}
+.popup_back {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reset-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 30vh;
+  background: rgb(10, 182, 225);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

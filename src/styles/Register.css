@@ -1,0 +1,83 @@
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgb(1, 152, 212);
+}
+.sub {
+  background-color: rgb(116, 207, 232);
+  border-radius: 15px;
+}
+
+.my-shake {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-timing-function: easy-in;
+  animation-iteration-count: infinite;
+  border: 1px solid red;
+}
+.pass {
+  position: relative;
+  
+}
+.errMail{
+  color:red
+}
+.eye {
+  position: absolute;
+  top: 6px;
+  right: 9px;
+  cursor: pointer;
+}
+.loginbtn{
+  background: none;
+  border:none;
+  text-decoration: underline;
+  color:blue;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(-2deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  37% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  62% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  87% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 576px)  {
+  .sub{width: 65%;}
+}
+@media (min-width: 576px)  {
+  .sub{width: 55%;}
+}
+@media (min-width: 865px)  {
+  .sub{width: 35%;}
+}
+@media (min-width: 1200px)  {
+  .sub{width: 35%;}
+}
+@media (min-width: 1200px)  {
+  .sub{width: 35%;}
+}
